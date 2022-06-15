@@ -4,6 +4,7 @@ public class Pessoa {
     private String id;
     private String nome;
     private int idade;
+    private int sexo;
 
     public String getId() {
         return this.id;
@@ -29,14 +30,13 @@ public class Pessoa {
         this.idade = idade;
     }
 
-    public Endereco getSexo() {
+    public int getSexo() {
         return this.sexo;
     }
 
-    public void setSexo(Endereco sexo) {
+    public void setSexo(int sexo) {
         this.sexo = sexo;
     }
-    private Endereco sexo; 
 
 
     @Override
