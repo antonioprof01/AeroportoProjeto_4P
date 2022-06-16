@@ -28,4 +28,12 @@ public class Administrativo extends Funcionario implements ComprarPassagem {
     public void gerarComprovante(){
         System.out.println("Comprovante gerado");
     }
+
+    public void Registrar_Ponto(){
+        System.out.println("Ponto registrado");
+    }
+
+    public void imprirVoucher(){
+        System.out.println("Imprimindo Voucher");
+    }
 }
