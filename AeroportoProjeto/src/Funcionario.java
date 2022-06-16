@@ -12,5 +12,4 @@ public abstract class Funcionario extends Pessoa {
 
     public abstract void Registrar_Ponto();
 
-
 }

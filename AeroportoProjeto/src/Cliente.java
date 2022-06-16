@@ -1,43 +1,23 @@
 public class Cliente extends Pessoa{
-    private int numPassagem;
+
+    private Voucher passagem;
     private float numAssento;
     private float preco_passagem;
 
-    public Cliente(int numPassagem, float numAssento, float preco_passagem) {
-        this.numPassagem = numPassagem;
+
+    public Cliente(Voucher passagem, float numAssento, float preco_passagem) {
+        this.passagem = passagem;
         this.numAssento = numAssento;
         this.preco_passagem = preco_passagem;
-
-        
     }
 
-    public void fazerCheckin() {
 
-        System.out.println("Fazendo checkin!..");
-            
-    }
-    public void compraPoltrona() {
-
-        System.out.println("Comprando Poltrona!..");
-            
-    }
-    public void reserva() {
-
-        System.out.println("Reserva Efetuada!..");
-                    
-    }
-    public void cancelarReserva() {
-
-        System.out.println("Reserva Cancelada!..");
-            
+    public Voucher getPassagem() {
+        return this.passagem;
     }
 
-    public int getNumPassagem() {
-        return this.numPassagem;
-    }
-
-    public void setNumPassagem(int numPassagem) {
-        this.numPassagem = numPassagem;
+    public void setPassagem(Voucher passagem) {
+        this.passagem = passagem;
     }
 
     public float getNumAssento() {
@@ -56,14 +36,17 @@ public class Cliente extends Pessoa{
         this.preco_passagem = preco_passagem;
     }
 
+
     @Override
     public String toString() {
         return "{" +
-            " numPassagem='" + getNumPassagem() + "'" +
+            " passagem='" + getPassagem() + "'" +
             ", numAssento='" + getNumAssento() + "'" +
             ", preco_passagem='" + getPreco_passagem() + "'" +
             "}";
     }
 
-    
+
+
+
 }
