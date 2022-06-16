@@ -27,6 +27,11 @@ public class Piloto extends Funcionario implements ComprarPassagem{
         System.out.println(" Comprovante:");
 
     }
+    public void Registrar_Ponto(){
+        System.out.println(" Registrar ponto do funcionario:");
+    };
+        
+    
 
 
     
