@@ -1,5 +1,26 @@
 public class App {
     public static void main(String[] args) throws Exception {
-        System.out.println("Hello, World!");
+
+        Administrativo func = new Administrativo();
+        Cliente cli = new Cliente("4", "Joao", 43, "M");
+        Voucher voucher = new Voucher("A467", 
+        "VPO", "PMW",
+         "11:00", "15:00", 
+         "B15");
+
+         func.cadastrarPassageiro(cli, voucher);
+
+         
+
+
+        
+
+        func.Registrar_Ponto();
+        
+
+
+        
+        
+
     }
 }

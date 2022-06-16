@@ -1,4 +1,8 @@
 public class Piloto extends Funcionario implements ComprarPassagem{
+    public Piloto(String id, String nome, int idade, String sexo) {
+        super(id, nome, idade, sexo);
+        //TODO Auto-generated constructor stub
+    }
     private int numero_registro;
 
     public int getNumero_registro() {
@@ -29,6 +33,12 @@ public class Piloto extends Funcionario implements ComprarPassagem{
     }
     public void Registrar_Ponto(){
         System.out.println(" Registrar ponto do funcionario:");
+    }
+
+    @Override
+    public void cadastrarPassageiro(Cliente passageiro, Voucher passagem) {
+        // TODO Auto-generated method stub
+        
     };
         
     

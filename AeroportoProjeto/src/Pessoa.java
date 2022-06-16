@@ -4,7 +4,16 @@ public class Pessoa {
     private String id;
     private String nome;
     private int idade;
-    private int sexo;
+    private String sexo;
+
+
+    public Pessoa(String id, String nome, int idade, String sexo) {
+        this.id = id;
+        this.nome = nome;
+        this.idade = idade;
+        this.sexo = sexo;
+    }
+
 
     public String getId() {
         return this.id;
@@ -30,11 +39,11 @@ public class Pessoa {
         this.idade = idade;
     }
 
-    public int getSexo() {
+    public String getSexo() {
         return this.sexo;
     }
 
-    public void setSexo(int sexo) {
+    public void setSexo(String sexo) {
         this.sexo = sexo;
     }
 

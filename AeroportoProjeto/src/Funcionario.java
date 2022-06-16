@@ -1,5 +1,10 @@
 public abstract class Funcionario extends Pessoa {
     
+    public Funcionario(String id, String nome, int idade, String sexo) {
+        super(id, nome, idade, sexo);
+        //TODO Auto-generated constructor stub
+    }
+
     private int Cadastro;
 
     public int getCadastro() {
@@ -11,5 +16,6 @@ public abstract class Funcionario extends Pessoa {
     }
 
     public abstract void Registrar_Ponto();
+
 
 }

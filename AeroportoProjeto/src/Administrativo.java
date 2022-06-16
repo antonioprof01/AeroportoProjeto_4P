@@ -1,5 +1,7 @@
 public class Administrativo extends Funcionario implements ComprarPassagem {
 
+    
+
     public void realizarCompra(){
         System.out.println("Compra realizada.");
     }
@@ -17,8 +19,12 @@ public class Administrativo extends Funcionario implements ComprarPassagem {
     }
 
     
-    public void cadastrarPassageiro(){
-        System.out.println("Cadastro de passageiro realizado");
+    @Override
+    public void cadastrarPassageiro(Cliente passageiro, Voucher passagem){
+        System.out.println(
+            "Passageiro: " + passageiro.toString() +
+            "Voucher: " + passagem.toString()
+        );
     }
 
     public void gerarNumeroReserva(){
@@ -36,4 +42,5 @@ public class Administrativo extends Funcionario implements ComprarPassagem {
     public void imprirVoucher(){
         System.out.println("Imprimindo Voucher");
     }
+
 }
