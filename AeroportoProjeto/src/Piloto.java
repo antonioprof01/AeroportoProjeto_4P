@@ -1,8 +1,8 @@
 public class Piloto extends Funcionario implements ComprarPassagem{
-    public Piloto(String id, String nome, int idade, String sexo) {
-        super(id, nome, idade, sexo);
-        //TODO Auto-generated constructor stub
-    }
+
+
+
+
     private int numero_registro;
 
     public int getNumero_registro() {
