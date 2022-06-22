@@ -1,8 +1,5 @@
 public class Piloto extends Funcionario implements ComprarPassagem{
 
-
-
-
     private int numero_registro;
 
     public int getNumero_registro() {
@@ -22,8 +19,8 @@ public class Piloto extends Funcionario implements ComprarPassagem{
         System.out.println(" Cadastrando o passageiro:");
     }
 
-    public void gerarNumeroReserva(){
-        System.out.println(" Imforme seu numero reserva:");
+    public int gerarNumeroReserva(){
+        return 0;
 
     }
 

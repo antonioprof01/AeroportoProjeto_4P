@@ -1,3 +1,4 @@
+
 public class Administrativo extends Funcionario implements ComprarPassagem {
 
     
@@ -32,8 +33,9 @@ public class Administrativo extends Funcionario implements ComprarPassagem {
         );
     }
 
-    public void gerarNumeroReserva(){
-        System.out.println("Numero reserva gerado.");
+    public int gerarNumeroReserva(){
+        
+        return 0;
     }
 
     public void gerarComprovante(){
