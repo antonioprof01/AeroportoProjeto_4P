@@ -28,8 +28,6 @@ public class Voucher {
     }
 
 
-
-
     public String getNumero_voo() {
         return this.numero_voo;
     }
@@ -77,8 +75,6 @@ public class Voucher {
     public void setPortao(String portao) {
         this.portao = portao;
     }
-
-
 
     @Override
     public String toString() {

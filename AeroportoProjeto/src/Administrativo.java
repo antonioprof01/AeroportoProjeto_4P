@@ -2,6 +2,11 @@ public class Administrativo extends Funcionario implements ComprarPassagem {
 
     
 
+    public Administrativo(String id, String nome, int idade, String sexo) {
+        super(id, nome, idade, sexo);
+        //TODO Auto-generated constructor stub
+    }
+
     public void realizarCompra(){
         System.out.println("Compra realizada.");
     }

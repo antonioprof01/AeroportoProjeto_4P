@@ -1,10 +1,10 @@
 public class ClientePlus extends Cliente {
-    public ClientePlus(int numPassagem, float numAssento, float preco_passagem) {
-        super(numPassagem, numAssento, preco_passagem);
+
+    public ClientePlus(String id, String nome, int idade, String sexo) {
+        super(id, nome, idade, sexo);
         //TODO Auto-generated constructor stub
     }
 
-    private int codig_plus;
 
     
 }

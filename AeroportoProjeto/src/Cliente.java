@@ -7,11 +7,4 @@ public class Cliente extends Pessoa{
         //TODO Auto-generated constructor stub
     }
 
-    public Cliente(int numPassagem, float numAssento, float preco_passagem) {
-    }
-
-
-
-
-
 }
