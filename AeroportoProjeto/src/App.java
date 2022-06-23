@@ -5,20 +5,13 @@ public class App {
 
         Cliente cli = new ClienteNormal("4", "Joao", 43, "M");
 
-        Voucher voucher = new Voucher("A467", 
-                                    "VPO", "PMW",
-                                    "11:00", "15:00", 
-                                    "B15");
+        Voucher voucher = new Voucher("A467", "VPO", "PMW", "11:00", "15:00", "B15");
 
 
          func.cadastrarPassageiro(cli, voucher);
 
-         
-
-
         
-
-        func.Registrar_Ponto();
+        //func.Registrar_Ponto();
         
 
 

@@ -7,6 +7,19 @@ public class Pessoa {
     private String sexo;
 
 
+    public Pessoa(String id, String nome, int idade, String sexo) {
+        this.id = id;
+        this.nome = nome;
+        this.idade = idade;
+        this.sexo = sexo;
+    }
+
+    public Pessoa(){
+        
+    }
+
+
+
     public String getId() {
         return this.id;
     }

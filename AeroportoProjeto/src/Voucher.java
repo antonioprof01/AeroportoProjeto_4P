@@ -1,5 +1,5 @@
 public class Voucher {
-    private Cliente cliente;
+    private ClienteNormal cliente;
     private String numero_voo;
     private String saida_aeroporto;
     private String chegada_aeroporto;
@@ -7,6 +7,7 @@ public class Voucher {
     private String original_saida;
     private String portao;
 
+    ClienteNormal cli = new ClienteNormal("234", "Joao", 23, "m");
 
 
     public Voucher(String numero_voo, String saida_aeroporto, String chegada_aeroporto, String horario_chegada, String original_saida, String portao) {
@@ -19,11 +20,11 @@ public class Voucher {
     }
 
 
-    public Cliente getCliente() {
+    public ClienteNormal getCliente() {
         return this.cliente;
     }
 
-    public void setCliente(Cliente cliente) {
+    public void setCliente(ClienteNormal cliente) {
         this.cliente = cliente;
     }
 
@@ -79,14 +80,14 @@ public class Voucher {
     @Override
     public String toString() {
         return "{" +
-            "Passageiro" + cliente.getNome() +
+            "\n\nPassageiro" + cli.getNome() +
             " numero_voo='" + getNumero_voo() + "'" +
             ", saida_aeroporto='" + getSaida_aeroporto() + "'" +
             ", chegada_aeroporto='" + getChegada_aeroporto() + "'" +
             ", horario_chegada='" + getHorario_chegada() + "'" +
             ", original_saida='" + getOriginal_saida() + "'" +
             ", portao='" + getPortao() + "'" +
-            "}";
+            "}\n\n";
     }
 
 
